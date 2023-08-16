@@ -16,7 +16,29 @@
 		}
 
 		.flex-item {
+			flex: 1 auto;
+		}
 
+		@media (min-width: 600px) {
+			.flex-container {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			.flex-item {
+				width: 50%;
+				flex: 1 auto;
+			}
+		}
+
+		@media (min-width: 1000px) {
+			.flex-container {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			.flex-item {
+				width: 33%;
+				flex: 1 auto;
+			}
 		}
 	</style>
 </head>
