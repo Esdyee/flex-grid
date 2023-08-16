@@ -12,20 +12,25 @@
 		}
 
 		.flex-item {
+
+		}
+
+		.flex-item:nth-child(1) {
+			flex-shrink: 0;
 			width: 150px;
 		}
 
-		.flex-item:last-child {
-			margin-left: auto;
+		.flex-item:nth-child(3) {
+			flex-shrink: 0;
+			width: 200px;
 		}
-
 	</style>
 </head>
 <body>
 <div class="flex-container">
-	<div class="flex-item">A</div>
-	<div class="flex-item">B</div>
-	<div class="flex-item">C</div>
+	<div class="flex-item">Abcdefg Abcd Abcdefg Abcdefg Abcdefg Abcdefg</div>
+	<div class="flex-item">Abcdefg Abcdefg Abcdefg Abcdefg Abcdefg Abcdefg Abcdefg Abcdefg Abcdefg Abcdefg</div>
+	<div class="flex-item">Abcdefg Abcdefg Abcdefg Abcdefg</div>
 </div>
 </body>
 </html>
