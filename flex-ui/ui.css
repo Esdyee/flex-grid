@@ -62,3 +62,23 @@
 	content: '✔';
 	margin-right: 0.5em;
 }
+
+
+/* photo-list */
+.user-item {
+	display: flex;
+	margin-bottom: 1.5rem;
+}
+
+.user-photo {
+	width: 50px;
+	height: 50px;
+	flex-shrink: 0;
+	border: 2px solid #333;
+	border-radius: 50%;
+	background-color: gold;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	margin-right: 0.5em;
+}
