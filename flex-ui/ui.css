@@ -82,3 +82,13 @@
 	background-size: 80%;
 	margin-right: 0.5em;
 }
+
+.user-name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.friend-item {
+	align-items: center;
+}
