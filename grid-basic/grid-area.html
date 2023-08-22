@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../default.css" />
+	<title>Grid Area</title>
+	<style>
+		.grid-container {
+			display: grid;
+			gap: 1rem;
+			grid-template-columns: 1fr 3fr 1fr;
+			grid-template-areas:
+			'..... header header'
+			'sidebar-a main sidebar-b'
+			'footer footer footer';
+		}
+
+		.grid-item {
+			background-color: orange;
+			border: 1px solid black;
+		}
+
+		.header {
+			grid-area: header;
+		}
+
+		.sidebar-a {
+			grid-area: sidebar-a;
+		}
+
+		.sidebar-b {
+			grid-area: sidebar-b;
+		}
+
+		.main {
+			grid-area: main;
+		}
+
+		.footer {
+			grid-area: footer;
+		}
+	</style>
+</head>
+<body>
+<div class="grid-container">
+	<div class="header grid-item">Header</div>
+	<div class="sidebar-a grid-item">Sidebar A</div>
+	<div class="sidebar-b grid-item">Sidebar B</div>
+	<div class="main grid-item">Aenean adipiscing efficiantur posuere solum nihil eros. Posuere egestas morbi dictumst hinc suscipit assueverit aenean unum no. Nisi maximus auctor ac menandri duis molestiae curabitur fastidii habitant. Ludus dignissim habemus phasellus moderatius parturient molestie usu. Mucius suavitate id nostrum errem natoque.</div>
+	<div class="footer grid-item">Footer</div>
+</div>
+</body>
+</html>
